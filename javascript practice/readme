@@ -1,0 +1,983 @@
+// // // // // // // // // // // var year = 2020;
+
+// // // // // // // // // // // if(year % 4 === 0){
+// // // // // // // // // // //   if(year % 100 === 0 ){
+// // // // // // // // // // //     if(year % 400 === 0){
+// // // // // // // // // // //       console.log("The year" + year + "is a leap year");
+// // // // // // // // // // //     }else{
+// // // // // // // // // // //       console.log("The year" + year + "is a not leap year");
+// // // // // // // // // // //     }
+// // // // // // // // // // //   }else{
+// // // // // // // // // // //     console.log("The year" + year + "is a leap year");
+// // // // // // // // // // //   }
+// // // // // // // // // // // }else{
+// // // // // // // // // // //   console.log("The year" + year + "is not a leap year");
+// // // // // // // // // // // }
+
+// // // // // // // // // // var age = 17;
+// // // // // // // // // // console.log((age >= 18) ? "you can vote" : "you cant't vote");
+
+// // // // // // // // // var area = "circle";
+// // // // // // // // // var PI = 3.142, l=5, b=4, r=3;
+
+// // // // // // // // // if (area == "circle"){
+// // // // // // // // //   console.log("the area of the circle is : " + PI*r**2);
+// // // // // // // // // }else if(area == "triangle"){
+// // // // // // // // //   console.log("the area of the triangle is : " + (l*b)/2);
+// // // // // // // // // }else if (area == "rectangle"){
+// // // // // // // // //   console.log("the area of the rectangle  is : " + (l*b));
+// // // // // // // // // }else{
+// // // // // // // // //   console.log("plz enter valid data");
+// // // // // // // // // }
+
+
+// // // // // // // // // var area = "circle";
+// // // // // // // // // var PI = 3.142, l=5, b=4, r=3;
+
+// // // // // // // // // switch(area){
+// // // // // // // // //   case 'circle':
+// // // // // // // // //     console.log("the area of the circle is :" + PI*r**2);
+// // // // // // // // //     break;
+// // // // // // // // //   case 'triangle':
+// // // // // // // // //     console.log("the area of the triangle is :" + (l*b)/2);
+// // // // // // // // //     break;    
+// // // // // // // // //   case 'circle':
+// // // // // // // // //     console.log("the area of the circle is :" + (l*b));
+// // // // // // // // //     break;  
+// // // // // // // // //   default: 
+// // // // // // // // //     console.log("plz enter valid data");
+// // // // // // // // // }
+
+
+// // // // // // // // // while loop
+
+// // // // // // // // var num = 0;
+
+// // // // // // // // while(num <= 10){
+// // // // // // // //   console.log(num);
+// // // // // // // //   num++;
+// // // // // // // // }
+
+// // // // // // // // // do while loop // gives 1 output atleast
+
+// // // // // // // // var num = 0;
+
+// // // // // // // // do{
+// // // // // // // //   console.log(num);
+// // // // // // // //   num++;
+// // // // // // // // }while(num <= 10);
+
+// // // // // // // //for loop
+
+// // // // // // // for(var num = 20;num <= 10;num++){
+// // // // // // //   console.log(num);
+// // // // // // // }
+
+
+// // // // // // for (var num= 1; num<=10;num++){
+// // // // // //   var tableOf =8;
+// // // // // //   console.log(tableOf + "*" + num + "=" + tableOf * num);
+// // // // // // }
+
+// // // // // function sum(a,b) {
+// // // // //   var total = a+b;
+// // // // //   console.log(total);
+// // // // // }
+
+// // // // // sum();
+
+// // // // // function sum(a,b) {
+// // // // //   return total = a+b;
+// // // // // }
+
+// // // // // var funExp = sum(5,15);
+// // // // // console.log("the sum of two number is" + funExp);
+
+// // // // var funExp = function (a,b) {
+// // // //   return total = a+b;
+// // // // }
+
+// // // // console.log("the sum of two number is" + funExp);
+
+
+// // // //let vs const vs VAR
+
+
+
+
+// // // // var=> Function Scope
+// // // //let and const => Block Scope
+
+// // // //Fat Arrow Function
+
+// // // //////////////////////ARRAY////////////////////////////////////////////////
+
+// // // //traversal//
+
+// // // // var myFriends = ['shayan','aslam','junaid','jaffer']
+// // // // console.log(myFriends[1]);
+
+// // // // console.log(myFriends.length);
+
+// // // // var myFriends = ['shayan','aslam','junaid','jaffer'];
+
+// // // // for(var i=0; i<myFriends.length){
+
+// // // // }
+// // // //////////////////////FOR IN LOOP//////////////////////////////////////////
+// // // // var myFriends = ['shayan','aslam','junaid','jaffer'];
+
+// // // // for(let elements in myFriends){
+// // // //   console.log(elements);
+// // // // }
+// // // //////////////////////FOR OF LOOP//////////////////////////////////////////
+// // // // for(let elements of myFriends){
+// // // //   console.log(elements);
+// // // // }
+// // // //////////////////////FOR EACH LOOP////////////////////////////////////////
+
+// // // var myFriends = ['shayan','aslam','junaid','jaffer'];
+
+// // // myFriends.forEach(function(elements,index,array) {
+// // //       console.log(elements + index);
+// // // });
+
+// // ////////////////////////SEARCHING AND FILTER///////////////////////////
+// // //INDEX OF//
+// // // var myFriends = ['shayan','aslam','junaid','jaffer'];
+// // // console.log(myFriends.indexOf('shayan'));
+
+// // ////LAST INDEX OF/////
+
+// // // var myFriends = ['shayan','aslam','junaid','jaffer'];
+// // // console.log(myFriends.lastIndexOf('shayan'));
+
+// // /////INCLUDES/////////
+
+// // // var myFriends = ['shayan','aslam','junaid','jaffer'];
+// // // console.log(myFriends.includes('shayan'));
+
+// // //////////////////////////////FILTERATION////////////////////////////////
+// // ////////////FIND AND FIND INDEX/////////////////////
+// // // const prices = [200,300,350,400,450,500,600];
+
+// // // const findElem = prices.find((currVal)=>currVal < 400 );
+
+// // // console.log(findElem);
+
+
+// // ///////////////////////FILTER METHOD////////////////////////////////////
+
+// // // const prices = [200,300,350,400,450,500,600];  //price < 400
+
+// // // const newPriceTag = prices.filter((elem,index)=> {
+// // //   return elem< 400;
+// // // })
+
+// // // console.log(newPriceTag);
+
+
+// // /////////////SORTING AND COMPARING ARRAYS///////////////////////////
+
+// // const months = ['march','jan','feb','april','dec','nov']
+
+// // console.log(months.sort());  /////WORKS ONLY ON STRINGS
+
+
+// /////////////////////CRUD| CREATE,READ,UPDATE AND DELETE//////////////////
+
+// // const animals = ['chicken','cow','duck']
+// // animals.push('goat')
+// // console.log(animals);
+
+
+
+// ////////////////////////SPLICE METHOD////////////////////////////////////////
+
+// // const months = ['jan','march','april','june','july'];
+
+
+// //////////////////////////MAP & REDUCE METHOD///////////////////////////////////////////
+
+// // const array1 = [1, 4, 9, 16, 25];
+
+// // let newArr = array1.map((curElem,index,arr)=>{
+// //   return curElem > 9;
+// // })
+// // console.log(array1);
+// // console.log(newArr);
+
+
+// // const array1 = [1, 4, 9, 16, 25];
+
+// // let newArr = array1.map((curElem,index,arr)=>{
+// //   return `Index no = ${index}and the value is ${curELem} belong to ${arr}`
+// // })
+
+// // console.log(newArr);
+
+
+// // let arr = [25,36,49,64,81];
+
+// // let arrSqr = arr.map((curElem) => Math.sqrt(curElem)
+// // )
+// // console.log(arrSqr);
+
+// //////////////////////////////CHAINING METHOD/////////////////////////////
+
+// // let arr = [2,3,4,6,8];
+
+// // let arr2 = arr.map((curElem) =>{
+// //     return curElem * 2;
+// // }).filter((curElem) =>{
+// //     return curElem > 10;
+// // })
+// // console.log(arr2);
+
+
+// /////////////REDUCE METHOD- to convert 2D & 3D array to 1D array///////
+
+// // let arr = [5,6,2];
+
+// // let sum = arr.reduce((accumulator,curELem,index,arr) => {
+// //     return accumulator +=  curELem;
+// // })
+
+// // console.log(sum);
+
+// /////////////////////FLATTENING AN ARRAY////////////////////////////////
+
+// // const arr = [
+// //         ['zone_1','zone_2']
+// //         ['zone_3','zone_4']
+// //         ['zone_5','zone_6']
+// //         ['zone_7','zone_8']
+// // ];
+
+// // let flatArr = arr.reduce((accumulator,currVal) => {
+// //           return accumulator.concat(currVal);
+// // })
+// // console.log(flatArr);
+
+
+// ////////////////////SLICING METHOD////////////////////////////////////////
+
+// // let myTweets = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+
+// // let myActualTweet = myTweets.slice(0,100) 
+// // console.log(myActualTweet);
+
+
+// ////////////////////////////////charAt() METHOD///////////////////////
+
+// // let str = "HELLO WORLD";
+
+// // console.log(str.charAt(0));
+
+// ///////charCodeAt() METHOD-returns unicode value///////////////////////
+
+// // let str = "HELLO WORLD";
+
+// // console.log(str.charCodeAt(0));
+
+
+// /////////////////CALCULATING UNICODE OF LAST CHARACTER////////////////////
+
+// // let str = "HELLO WORLD";
+
+// // let lastChar = str.length -1;
+// // console.log(str.charCodeAt(lastChar));
+
+// /////////////////TRIM METHOD/////////////////
+
+// // USE TRIM METHOD TO TRIM LAST AND STARTING SPACES
+
+
+
+// //////////////////CONVERTING STRING TO AN ARRAY METHOD/////////////////////
+
+// ///SPLIT METHOD WILL BE USED.....
+
+// // var txt = "a,b,c,d,e";
+// // console.log(txt.split(","));
+// // console.log(txt.split(" "));
+// // console.log(txt.split("|"));
+
+
+
+// /////////////////////////////DATE AND TIME METHODS/////////////////////////////////////
+
+// // new Date()
+// // new Date(year, month, day, hours, minutes, seconds, milliseconds)
+// // new Date(milliseconds)
+// // new Date(date String)
+
+// //////////////////////DATE OBJECTS///////////////////////////////
+
+// // let currDate = new Date();
+// // console.log(currDate);
+
+// // console.log(new Date());
+// // console.log(new Date().toLocaleDateString());
+// // console.log(new Date().toString());
+
+// // console.log(Date.now());   //Returns numeric value to the current time number in milliseconds since January 1 1970;
+
+
+// // var d = new Date(2023, 0, 21, 14, 10, 30, 0);
+// // console.log(d.toLocaleString());
+
+
+// // var d = new Date("January 21, 2023 14:13:00");
+// // console.log(d);
+
+
+// ////////////////////////////////////////DATES METHODS ////////////////////////////////
+
+
+// // const currDate = new Date();
+
+// // console.log(currDate.toLocaleDateString());
+// // console.log(currDate.getFullYear());
+// // console.log(currDate.getMonth());
+// // console.log(currDate.getDate());
+// // console.log(currDate.getDay());
+
+// console.log(currDate.setFullYear(2023)); ///can optionally set month and date
+
+
+
+///////////////////////////////////TIME METHODS///////////////////////////////////////
+
+
+// const curTime = new Date();
+
+///////////HOW TO GET THE INDIVIDUAL TIME//
+
+// console.log(curTime.getTime());
+// console.log(curTime.getHours());
+// console.log(curTime.getMinutes());
+// console.log(curTime.getSeconds());
+// console.log(curTime.getMilliSeconds());
+
+/////set time///
+
+// const curTime = new Date();
+
+// console.log(curTime.setTime());
+// console.log(curTime.setHours());
+// console.log(curTime.setMinutes());
+// console.log(curTime.setSeconds());
+// console.log(curTime.setMilliSeconds());
+
+
+///////////////////////////////////////JAVASCRIPT MATH OBJECT//////////////////////////////
+
+// console.log(Math.PI);
+
+// let num = 10.2565;
+// console.log(Math.round(num));
+
+// console.log(Math.pow(2,3));
+
+// console.log(Math.sqrt(25));
+// console.log(Math.sqrt(81));
+// console.log(Math.sqrt(65));
+
+// console.log(Math.abs(-55));
+// console.log(Math.abs(-55.5));
+// console.log(Math.abs(-955));   ///////gives absolute (positive) value.
+// console.log(Math.abs(4-6));
+
+// console.log(Math.ceil(4.51));
+// console.log(Math.round(4.51));
+// console.log(Math.ceil(99.01));
+// console.log(Math.round(99.1));
+// console.log(Math.floor(99.1));
+
+
+// console.log(Math.min(0,-200,500,1000));  ////returns min number
+// console.log(Math.max(0,-200,500,1000));  ////returns max number
+
+// console.log(Math.random()*10);   ////returns random number b/w 0 and 1
+// console.log(Math.floor(Math.random()*10));   ////returns random number b/w 0 and 1
+
+
+// console.log(Math.trunc(4.6));   ////////////returns the integer part of the number before decimal
+// console.log(Math.trunc(-99.1));   ////////////returns the integer part of the number before decimal
+//// if the argument is a positive number Math.trunc is equivalent to Math.floor
+//otherwise math.trunc is equivalent to Math.ceil
+
+
+
+////////////// DOM(Document Object Model) IN JAVASCRIPT //////////////////////////
+
+//window:-  1)window is the main container or we can say the global object and any operations related to entire browser window can be a part of window object.
+          //2) All the members like objects, methods and properties. If they are the part of window object then we do not refer the window object.
+          //3) window has methods, properties and object, example(setTimeout() or setInterval() are the methods, where as Document is th object of the window and it also has a screen object with properties describing the physical display.)PROPERTIES OF WINDOW OBJECT INCLUDES INNERHEIGHTS AND INNERWIDTH AND THERE ARE MANY MORE.
+    
+
+          //document:- 1)whereas the DOM is the child of window object.
+          //           2)Where in the DOM we need to refer the document, if we want to   use  the document object,methods, or properties.
+          //3) Document is just the object of the global object that is window, which deals with the document, the HTML elements themselves.
+
+
+/////////////////BOM (Browser Object Model)////////////////////////////////////////////////
+
+// It deals with browser components ASIDE FROM THE DOCUMENT, like history, location,navigator and screen as well as some others that vary by browser. OR In simple words meaning all the window operations which comes under BOM are performed.
+
+
+
+///////////////////////////////DOM NAVIGATION/////////////////////////////////////////////
+
+// HTML which is the root element of the document (document.documentElement)
+//document.head
+//document.body
+//document.body.childNodes (includes tab,enter and whitespaces)
+
+
+//////////////////////////HOW TO SEARCH THE ELEMENTS AND THE REFERENCES////////////////////
+
+// class is used to target whole div and ID is used to target a single individual.
+
+//when you want to play with the html side you have to use DOM (Document Object Model) and when you want to play browser side use BOM (Browser Object Model).
+
+
+
+// there are 4 ways to change the html in the browser object model:-
+
+//1)  document.getElementByID('heading').innerHTML = "welcome to thapa"
+
+//2) const headingchange = document.getElementByID('heading');
+//   headingchange.innerHTML = "welcome to thapa"                // by reference
+
+//3) document.getElementsByClassName('para');  //by class name  //this can also be used to detect how many times a class is used in document.
+
+//4)document.getElementByTagName('p')   //by tag name 
+
+//5) document.getElementsByName('gender');      //by name
+
+
+////QUERY SELECTOR//
+
+// document.querySelector('#heading').innerHTML = "I changed again";  //queryselector can be used for id,class,and tag also.// it returns the first matching value.
+
+
+
+//////////////////////////DIFFERENCE BETWEEN GETELEMENTBYID AND QUERYSELECTOR//////////////
+
+///GETELEMENTBYID returns a reference to the element by its ID. If the element with the specified Id is not in the document it will return null.
+
+///QUERYSELECTOR returns the first element within the document that matches the specified group of selectors, or null if no matches are found.
+
+
+//What If you want to get the html content if the third li? you will not be able to use GetElementById because there is no id associated with it. But you can do with queryselector.
+
+
+
+///////////////////////EVENTS IN JAVASCRIPT///////////////////////////////////////////////
+
+//HTML events are "things" that happen to HTML elements.
+//when javascript is used in HTML pages, Javascript can "react" on these events.
+
+//HTML events are something the browser does, or something a user does.
+
+
+//////////////////////////WHAT IS EVENT OBJECT?///////////////////////////////////////////
+
+//Event object is the parent object of the event object.
+//for example 
+//MouseEvent, focusEvent, KeyboardEvent etc
+
+
+///const checkEvent = () => {
+ // console.log(event);
+//console.log(event.target);
+//console.log(event.type);
+//}
+
+//fourthway.addEventListener('click',checkEvent);
+
+
+///////////MouseEvent in Javascript :- events that occur when the mouse interacts with the HTML //document belongs to the MouseEvent object.
+
+// //{/* <script>
+
+//   const mEnter = document.getElementByID('box');
+
+//   mEnter.addEventListener('mouseenter',() =>{
+//     mEnter.style.backgroundcolor = 'red';
+//     console.log("mouse enter bro");
+//   })
+
+
+// </script> */}
+
+
+///////////////KEYBOARD EVENTS////
+
+//Events that occur when user presses a key on the keyboard 
+
+//onkeypress
+//onkeydown
+//onkeyup
+
+///////////////INPUT EVENTS IN JAVASCRIPT
+
+///the onchange event occurs when the value of the onchange event occurs when the checked state has been changed
+
+
+
+///addEventListeners does not overwrite existing event handlers,
+//whereas onclick overrides any existing onclick = fn event handlers.
+//the other significant difference, of course, is that onclick will always work.
+//whereas addEventlisteners does not work in internet explorer before version 9.
+
+
+
+//////////////////////TIMING BASED EVENTS IN JAVASCRIPT//////////////////////////////////
+
+//the window object allows execution of code at specified time intervals.
+//these time intervals are called timing events.
+//the 2 key methods 
+
+//setTimeout(function,milliseconds) // executes a function,after waiting a specified number of milliseconds.
+
+// setInterval(function,milliseconds)// same as timeout(),but repeats the execution of the function continuously.
+
+//settimeout()
+//cleartimeout()
+//setinterval
+//clearinterval()
+
+
+
+//////////////////////////////////////OOPS IN JAVASCRIPT///////////////////////////////////
+
+// WHAT IS OBJECT LITERALS ???
+// Object literal is simply a key:value pair data structure.
+
+// storing variables and functions together in one container, we can refer this as an objects.
+
+
+
+//1st way
+
+// let bioData = {
+//   myName : "shayan",
+//   myAge : 18,
+//   getData : function(){
+//     console.log(`My name is ${bioData.myName} and my age is ${bioData.myAge}`);
+//   }
+// }
+
+// bioData.getData();
+
+
+//2nd way // no need to write function
+
+// let bioData = {
+//   myName : "shayan",
+//   myAge : 18,
+//   getData() {
+//     console.log(`My name is ${bioData.myName} and my age is ${bioData.myAge}`);
+//   }
+// }
+
+// bioData.getData();
+
+
+//3rd way // What if we want object as a value inside a object
+
+// let bioData = {
+//   myName : {
+//       realname : "shayan",
+//       channelName : "technical world"
+//   },
+//   myAge : 18,
+//   getData (){
+//     console.log(`My name is ${bioData.myName} and my age is ${bioData.myAge}`);
+//   }
+// }
+
+// console.log(bioData.myName.channelName);
+
+
+///////WHAT IS THIS OBJECT??????
+
+//The definition of "this" object is that it contain the current context.
+
+//The this object can have different values depending on where its placed.
+
+//Example 1)
+//console.log(this.alert('Awesome')); //it refers to the current context and that is window global object
+
+
+//Example 2)
+
+// function myName(){
+//   console.log(this);
+// }
+// myName();
+
+
+//Example 3)
+
+// var myNames = 'shayan';
+//   function myNames(){
+//   console.log(this.myNames);
+// }
+// myName();
+
+
+//Example 4)
+
+// const obj = {
+//   myAge : 18,
+//   myName() {
+//     console.log(this);
+//   }
+// }
+// obj.myName();
+
+//Example 5)This object will not work with arrow function because it will take window
+
+//const obj = {
+  //   myAge : 18,
+  //   myName() => {
+  //     console.log(this);
+  //   }
+  // }
+  // obj.myName();
+
+
+//Example 6)
+
+// let bioData = {
+//   myName : {
+//     realName : "shayan",
+//     channelName : 'technical world'
+//   },
+//   myAge : 18,
+//   getData(){
+//     console.log(`My name is ${this.myName.channelName} and my age is ${this.myAge}`);
+//   }
+// }
+
+// bioData.getData();
+
+
+//////////////////////////////////DESTRUCTURING IN ES6/////////////////////////////////////
+
+//the destructuring assignment syntax is a javascript expression that makes it possible to unpack values from array, or properties from objects, into distinct variables.
+
+
+///   ARRAY DESTRUCTURING
+
+// const myBioData = ['shayan', 'shayan', 26];
+
+// let myFName = myBioData[0];
+// let myLName = myBioData[1];
+// let myAge = myBioData[2];
+
+// let [myFName,myLName,myAge ] = myBioData;
+// console.log(myAge);
+
+//we can add values too
+
+// let [myFName,myLName,myAge, myDegree ="MCS" ] = myBioData;
+
+
+////   OBJECT DESTRUCTURING
+
+// const myBioData = {
+//   myFName : 'shayan',
+//   myLName : 'shayan',
+//   myAge : 26
+// }
+
+// // let age = myBioData.age;
+// // let myFName = myBioData.myFName;
+
+// let {myFName,myLName,myAge, myDegree ="MCS" } = myBioData;
+// console.log(myAge);
+
+
+////////////////////// OBJECT PROPERTIES
+
+// we can now use dynamic properties 
+
+    // let myName = "shayan";
+    // const myBio = {
+    //   [myName] : "hello how are you?",  // square brackets indicates dynamic keys.
+    //   26 : "is my age"
+    // }
+
+    // console.log(myBio);
+
+
+/// no need to write key and value, if both are same 
+
+// let myName = "shayan"
+// let myAge = 26;
+
+// const myBio ={
+//   myName : myName,
+//   myAge : myAge
+// }
+
+// console.log(myBio);
+
+//another way of writing upper code in a more efficient manner
+
+// let myName = "shayan"
+// let myAge = 26;
+
+// const myBio ={myName,myAge}
+
+// console.log(myBio);
+
+
+
+///////////////////////////////SPREAD OPERATORS/////////////////////////////////////////
+
+
+// const colors = ['red', 'green', 'blue', 'white'];
+// // const myColors = ['red', 'green', 'blue', 'white', 'yellow', 'black']; //this method is not efficient
+
+// const MyFavColors = [...colors, 'yellow', 'black'];  ///////////3 dots are must for spread operators//
+// console.log(MyFavColors);
+
+
+
+///ES7 features
+
+// //1: array include 
+// const colors = ['red', 'green', 'blue', 'white'];
+// const isPresent = colors.includes('red');
+// console.log(isPresent);
+
+// //2: **
+
+// console.log(2**3);
+
+
+
+///ES8 features
+
+// const message = "my name is shayan";
+// console.log(message);
+// console.log(message.padStart(5));
+// console.log(message.padEnd(10));
+
+
+// const person = {name: 'Fred', age: 87};
+// // console.log(Object.values(person) );
+// console.log(Object.entries(person) );    /// create separate arrays fro entries
+
+
+// ES2018
+
+// const person = {name: 'Fred', age: 87};
+// const sPerson = {...person};
+// console.log(person);
+// console.log(sPerson);
+
+
+// ES2019
+
+// flat method is used to flatten array it also takes parameters of numbers of how may levels do it have to flatten.
+// INFINITY can be used in brackets as parameters if you dont know how many levels does the array touches.
+
+//Object.fromEntries is used to make array into object back.
+
+//TrimStart and TrimEnd is used to trim extra spaces that are used before or after a string.
+
+
+// ES2020
+
+//#1 : BigInt
+
+// let oldNum = Number.MAX_SAFE_INTEGER;  //9007199254740991 the largest num that javascript can represent till 2019.
+// // console.log(oldNum);
+// // console.log(9007199254740991n + 12n);  // 'n' reperesents BigInt data type 
+
+// const newNum = 9007199254740991n + 12n;
+
+// console.log(newNum);
+// console.log(typeof newNum);
+
+// ES2014
+
+// "use strict";  //reminds you to not forget any important syntax
+
+// x = 3.14;
+// console.log(x);
+
+
+
+///////////////////////// ADVANCED JAVASCRIP///////////////////////////////////////////////
+
+
+//////// EVENT PROPAGATION (EVENT BUBBLING AND EVENT CAPTURING)
+
+// WHAT IS EVENT PROPAGATION?
+// The event propagation mode determines in which order the elements recieve the event.
+
+// EVENT BUBBLING AND CAPTURING
+
+// EVENT BUBBLING (the event is first captured and handled by innermost element then propagated to outer elements.)
+
+// EVENT CAPTURING (the event is first captured by the outermost element and propagated to the inner elements. // Capturing is also called "trickling" which helps remember the propagation order.)
+
+// IF NOTHING is written by default event propagation will be EVENT BUBBLING(bottom to top)
+
+// Event Bubbling And Event Capturing are 2 ways of EVENT PROPAGATION in the HTML DOM API, when an event occurs in an element inside another element, and both elements have registered a handle for that event.
+// The event propagation mode determines in which order the elements recieve the event.
+
+//Bottom to top means bubbling phase (from the event target parent back to the window)
+//Top to bottom means capturing phase (going from the window to the event target phase)
+// The Target Phase is the target phase.
+
+
+//If you want to stop event propagation then we use event.stopPropagation();
+// in addEventListener third argument will be propagation phase
+
+
+////HIGHER ORDER FUNCTION
+/// Function which takes another function as an arguments is called HOF
+// wo function jo dusre function ko as an argument accept krta hai use HOF
+
+
+////CALLBACK FUNCTION
+/// Function which get passed as an argument to another function is called CBF
+// // A callback function is a function that is passed as an argument to 
+// // another function, to be called "called back" at a later time.
+
+// // Jis bhi function ko hum kisi or function ke under as an arguments passed krte hain then usko hum callback function bolte hain. 
+
+
+
+/////////////////////// ASYNCHRONOUS JAVASCRIPT
+
+// // HOISTING IN JAVASCRIPT
+
+// we have a creation phase and execution phase.
+// hoisting in javascript is a mechanism where variables and functions 
+// declarations are moved to the top of their scope before the code execute.
+
+// // for example
+
+// console.log(myName);
+// var myName;
+// myName = "shayan"
+
+
+// // WHAT IS SCOPE CHAIN AND LEXICAL SCOPING IN JAVASCRIPT
+
+// // The scope chain is used to resolve the value of variable names in JS.
+
+// // Scope chain in js is lexically defined, which means that we can see what the scope chain will be looking at the code.
+
+// // At the top, we have the Global Scope, which is the window Object in the browser.
+
+// // Lexical Scoping means Now, the inner function can get access to their parent functions variables But the vice-versa is not true.
+
+
+// FOR EXAMPLE'
+
+// let a = "hello guys. ";  //global scope
+
+// const first = () => {
+//   let b = " How are you?"
+
+//    const second = () => {
+//      let c = " Hii, I am fine thank you";
+//      console.log(a+b+c);
+//    }
+//    second();
+// }
+
+// first();
+
+
+
+//////   WHAT IS CLOSURES IN JAVASCRIPT?
+
+// // A closure is the combination of  a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
+
+// // In other words, a closure gives you access to an outer functions scope from an inner function.
+
+// // In javaScript, closures are created every time a function is created, at function creation time. 
+
+// // it is same as lexical scoping
+
+
+//// Synchronous and Asynchronous programming
+
+// // synchronous programming does 1 work at a time
+// // Asynchronous programming does smaller work first 
+
+//////////WHAT IS EVENT LOOP IN JAVASCRIPT??
+
+
+
+/////////WHAT IS FUNCTION CURRYING??
+
+// // CURRYING is a technique of evaluating function with multiple arguments, into sequence of function with single argument.
+
+// for example
+
+// sum (5)(3)(8)
+
+// function sum(num1){
+//   return function(num2){
+//     return function(num3){
+//       console.log(num1,num2,num3);
+//     }
+//   }
+// }
+
+
+/////////AJAX PROGRAMMING 
+
+// // Ajax, which initially sttod for asynchronous javascript, and XML, is a programming practice of building complex, dynamic webpages using a technology known as XMLHTTPRequest.
+
+// const container = document.querySelector('#container');
+
+// const request = new XMLHttpRequest();
+// request.open('GET',"https://restcountries.eu/rest/v2/name/nepal");
+// request.send();
+
+// // to get response
+
+// request.addEventListener('load',function(){
+//   //console.log( this.responseText);
+//   const[data] = JSON.parse(this.responseText);
+// })
+
+
+
+
+////////////// JSON (JAVASCRIPT OBJECT NOTATION)
+
+// // JSON.stringify turns a javascript object into JSON text and stores that JSON text in a string , e.g:
+
+// var my_object = {key_1 : "some text", key_2 : true, key_3 : 5};
+
+// var object_as_string = JSON.stringify (my_object);
+
+// // JSON.parse turns a string of JSON text into a javascript object.
+
+
+
+////////////////// PROMISES
+
+// // 2 conditions SUCCESS OR FAILURE
+
+// // fetch()
+// // milega = sahi hai
+// // nhi milega = internet error OR server error
+
+// //  FULLFILLED OR REJECTED OR ONGOING
+// // promises are consumed
